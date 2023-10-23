@@ -77,7 +77,7 @@ jobs:
       
       - uses: datadog/agent-github-action@v1.3
         with:
-          api_key: ${{ secrets.DD_API_KEY }}
+          api_key: ${{ secrets.RAINDROPS_DATADOG_API_KEY }}
           container_name: "datadog-agent-${{ steps.random-number-generator.outputs.random-number }}"
       
       - name: Install xk6

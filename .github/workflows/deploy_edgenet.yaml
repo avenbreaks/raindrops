@@ -6,7 +6,7 @@ on:  # yamllint disable-line rule:truthy
 
 jobs:
   deploy_to_edge_net:
-    name: Update EdgeNet
+    name: Update Raindrops
     runs-on: ubuntu-latest
     steps:
       - name: Get aws-commander
@@ -20,11 +20,11 @@ jobs:
 
       - name: Run deployment Ansible
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.EDGENET_AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.EDGENET_AWS_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.RAINDROPS_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.RAINDROPS_AWS_SECRET_ACCESS_KEY }}
         run: >
           /usr/local/bin/aws-commander
-          -instances i-039f7c0b3328a00f8,i-035b9f2d78cfb8ea9,i-00a6c7cb3a213f21f,i-03ac2f42ddcba6120
+          -instances i-xxxxxxxxx,i-xxxxxxxxx,i-xxxxxxxxx,i-xxxxxxxxx
           -mode ansible
           -playbook .github/workflows/ansible/update_edgenet.yaml
           -aws-zone us-west-2
