@@ -2,8 +2,8 @@
 name: Release
 on:  # yamllint disable-line rule:truthy
   push:
-    branches-ignore:
-      - '**'
+    branches:
+      - 'main'
     tags:
       - 'v*.*.*'
       # to be used by fork patch-releases ^^
