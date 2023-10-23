@@ -1,0 +1,17 @@
+{
+  "ProxyAdmin": {
+    "proxyAdminOwner": ""
+  },
+
+  "CheckpointManager": {
+    "initiator": ""
+  },
+
+  "CustomSupernetManager": {
+    "newStakeManager": "",
+    "newBls": "",
+    "newMatic": "",
+    "newChildValidatorSet": "",
+    "newDomain": ""
+  }
+}
