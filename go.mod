@@ -81,7 +81,7 @@ require (
 	github.com/DataDog/go-libddwaf v1.5.0 // indirect
 	github.com/DataDog/go-tuf v1.0.2-0.5.2 // indirect
 	github.com/ebitengine/purego v0.5.0-alpha.1 // indirect
-	github.com/go-jose/go-jose/v3 v3.0.0 // indirect
+	github.com/go-jose/go-jose/v3 v3.0.1 // indirect
 	github.com/golang/mock v1.6.0 // indirect
 	github.com/google/s2a-go v0.1.5 // indirect
 	github.com/hashicorp/golang-lru/v2 v2.0.3 // indirect
